@@ -179,9 +179,13 @@ python camera.py
 
 ## 🎯 Model Training
 
-### Retrain the license plate detector
+### 1. Download Dataset
+The model was trained on a custom dataset of Vietnamese license plates.
+1. Download the dataset from: **[Your Dataset Link Here - e.g. Google Drive/Roboflow]**
+2. Extract the dataset into the `YOLODataset/` directory.
 
-1. Prepare your dataset following the YOLO format in `YOLODataset/`:
+### 2. Dataset Structure
+Prepare your dataset following the YOLO format:
    ```
    YOLODataset/
    ├── images/
@@ -192,7 +196,8 @@ python camera.py
        └── val/
    ```
 
-2. Update `dataset.yaml` with your dataset paths:
+### 3. Configure Path
+Update `dataset.yaml` with your dataset paths (relative paths):
    ```yaml
    train: YOLODataset/images/train/
    val: YOLODataset/images/val/
