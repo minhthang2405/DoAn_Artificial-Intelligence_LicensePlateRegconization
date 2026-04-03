@@ -1,0 +1,103 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ========================
+# Virtual Environment
+# ========================
+venv/
+env/
+.env/
+
+# ========================
+# IDE / Editor
+# ========================
+.idea/
+.vscode/
+.atom8n/
+*.swp
+*.swo
+*~
+
+# ========================
+# YOLOv8 Pretrained Weights (large files)
+# ========================
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8x.pt
+
+# ========================
+# YOLO Training Outputs
+# ========================
+runs/
+
+# ========================
+# Model Weights (download separately)
+# ========================
+model/*.pt
+model/ppocrv4/*.onnx
+
+# ========================
+# Datasets (too large for git)
+# ========================
+YOLODataset/
+OCRDataset--notuse/
+
+# ========================
+# Test Data (too large for git)
+# ========================
+test_image/
+test_video/
+
+# ========================
+# Results / Output
+# ========================
+result/
+
+# ========================
+# Temporary / Cache Files
+# ========================
+*.jpg
+*.png
+*.mp4
+*.avi
+!test_image/
+!result/
+!result/*.jpg
+!result/*.png
+result/video_saved/
+crop.jpg
+cache.jpg
+cache_ch.jpg
+edge.jpg
+line.jpg
+res.jpg
+
+# ========================
+# Unused / Legacy Files
+# ========================
+autolabel-notuse.py
+checkversion-notuse.py
+yolov5/
+check_cache/
+
+# ========================
+# OS Files
+# ========================
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ========================
+# Git LFS
+# ========================
+*.onnx

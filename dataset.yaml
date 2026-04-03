@@ -1,0 +1,7 @@
+train: YOLODataset/images/train/
+val: YOLODataset/images/val/
+nc: 2
+names: ['BSD', 'BSV']
+#0 là biển số 1 dòng = BSD, 1 là biển 2 dòng = BSV
+#label lưu trong
+#D:\DataDownloaded\License-Plate-Recognition\YOLODataset\labels\train
