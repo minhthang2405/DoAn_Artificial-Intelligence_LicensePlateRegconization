@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">🚗 Vietnamese License Plate Recognition System</h1>
+  <h1 align="center">Vietnamese License Plate Recognition System</h1>
   <p align="center">
     <em>Real-time vehicle detection and license plate recognition using YOLOv8 & PaddleOCR</em>
   </p>
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 <p align="center">
   <img src="result/bien_so.jpg" width="45%" />
@@ -24,7 +24,7 @@
 
 An end-to-end real-time Vietnamese license plate recognition system capable of **detecting vehicles**, **localizing license plates**, and **extracting plate text** from both static images and live video feeds. The system leverages a two-stage YOLOv8 detection pipeline combined with PaddleOCR v4 for high-accuracy text recognition.
 
-## ✨ Features
+## Features
 
 - **Multi-class Vehicle Detection** — Detects cars, trucks, motorcycles, and buses with color-coded bounding boxes
 - **License Plate Localization** — Custom-trained YOLOv8 model distinguishing single-line (BSD) and double-line (BSV) Vietnamese plates
@@ -34,7 +34,7 @@ An end-to-end real-time Vietnamese license plate recognition system capable of *
 - **Plate Validation** — Regex-based post-processing to validate Vietnamese plate number formats
 - **Skew Correction** — Automatic deskewing of rotated plate images for improved OCR accuracy
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Input (Image/Video)
@@ -70,7 +70,7 @@ Input (Image/Video)
 └───────────────────┘
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── camera.py                # Real-time video processing pipeline
@@ -114,7 +114,7 @@ Input (Image/Video)
 └── result/                  # Output results
 ```
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -154,7 +154,7 @@ Download the pretrained models and place them in the `model/` directory:
 python checkGPU.py
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Process a single image
 
@@ -177,7 +177,7 @@ python camera.py
 - Press **Q** to quit
 - Processed video is automatically saved to `result/video_saved/`
 
-## 🎯 Model Training
+## Model Training
 
 ### 1. Download Dataset
 The model was trained on a custom dataset of Vietnamese license plates.
@@ -210,7 +210,7 @@ Update `dataset.yaml` with your dataset paths (relative paths):
    python retrain_model.py
    ```
 
-## 📊 Results
+## Results
 
 | Detection Type | Model | Input Size | Classes |
 |---------------|-------|------------|---------|
@@ -226,7 +226,7 @@ Update `dataset.yaml` with your dataset paths (relative paths):
 - **Orange** bounding box → Bus
 - **Green** bounding box → License plate + recognized text
 
-## 🔧 Technologies
+## Technologies
 
 | Technology | Purpose |
 |-----------|---------|
@@ -237,16 +237,16 @@ Update `dataset.yaml` with your dataset paths (relative paths):
 | **ONNX Runtime** | High-performance model inference |
 | **NumPy** | Numerical computations |
 
-## 📝 License
+## License
 
 This project is for educational purposes as part of the Artificial Intelligence course.
 
-## 👥 Authors
+## Authors
 
 - **Minh Thang** — [GitHub](https://github.com/minhthang2405)
 
 ---
 
 <p align="center">
-  <em>Built with ❤️ using YOLOv8 & PaddleOCR</em>
+  <em>Built with YOLOv8 & PaddleOCR</em>
 </p>
